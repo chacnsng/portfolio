@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4c5b0b71e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!----boxicons link---->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!----googlefonts link---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!----header section---->
+    <div id="header"> 
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+        </div>   
+    </div>
+    
+    <!----home section---->
+    <section class="home">
+        <div class="home-text">
+            <span>Mobile/Web Developer</span>
+            <h1>Charlene Cansing</h1>
+            <p>An innovative and versatile mobile/web developer with a passion for crafting elegant digital solutions. 
+            </p>
+                 
+        </div>
+        <div class="home-img">
+            <img src="images/home.png">
+        </div>
+    </section>
+
+    
+
+
+    <!----Custom js file link---->
+    <script src="js/script.js"></script>
+
+    <!-------about------>
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Charlene Cansing, a dedicated mobile and web developer with a flair for multitasking as a General Virtual Assistant. 
+                    Driven by passion and fueled by hard work, I approach every project with determination to exceed client expectations.  
+                    <br><br>With over a year of hands-on experience in E-commerce, particularly in Walmart Dropshipping, 
+                    I bring valuable insights to the table. Moreover, I've honed my skills through 176 hours of rigorous General Virtual 
+                    Assistant Training at QuickDesk Virtual Solution. My academic foundation in Information Technology from the University of 
+                    Mindanao Digos College underpins my technical expertise, ensuring top-notch solutions for every development challenge. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Proficiency </span><br>Proficient in web and mobile development technologies including HTML, CSS, and JavaScript.</li>
+                            <li><span>Detail Oriented</span><br>Pay meticulous attention to detail in all aspects of development and virtual assistance tasks, ensuring high-quality deliverables.</li>
+                            <li><span>Multi-Tasking</span><br>Seamlessly juggle between development projects and virtual assistant duties, maintaining productivity and efficiency across all tasks.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Social Media Management | Innosky VA</li>
+                            <li><span>2022 - 2023</span><br>SEO | QuickDesk VA</li>
+                            <li><span>2021 - 2022</span><br>Lead Generation & Data Entry | QuickDesk VA</li>
+                            <li><span>2019 - 2021</span><br>E-Commerce | Walmart Dropshiping VA</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>University of Mindanao Digos College (Undergraduate)</li>
+                            <li><span>2022</span><br>QuickDesk Virtual Solution</li>
+                            <li><span>2020</span><br>Senior High School in Digos City</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+ </div>   
+ <!------services----->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Website Design</h2>
+                <p>Transform your online presence with our professional website design service. We craft visually stunning, user-friendly websites tailored to your brand's unique identity and goals. From concept to launch, we ensure a seamless and engaging experience for your visitors, helping you stand out in the digital landscape and achieve your business objectives.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Android Mobile Developer</h2>
+                <p>Empower your business with our Android mobile development expertise. We specialize in creating high-quality, user-friendly Android applications tailored to your specific needs. From concept to deployment, we leverage the latest technologies and best practices to deliver innovative solutions that engage your audience and drive results on the Android platform.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Web Developer</h2>
+                <p>Elevate your online presence with our professional web development service. We specialize in creating responsive, visually appealing websites that are tailored to your brand and business goals. From custom designs to seamless functionality, we ensure a user-friendly experience that engages your audience and drives conversions.</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!---------portfolio----------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Job App</h3>
+                    <p>The app connects you to the talented and hardworking people around the world.
+                        Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Coffee App</h3>
+                    <p>Our coffee app serves as a digital haven for both seasoned coffee aficionados and budding enthusiasts alike. 
+                        Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Food Website</h3>
+                    <p>Our food website is a culinary haven where gastronomy meets digital innovation, catering to both seasoned chefs and home cooks alike.  
+                        Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+ <!--------contact---------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>charlene.cansingg@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+63 976 099 9644</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/charlene.cansing/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/cha2102_?t=avPx022z45zK1c0YO4y0WA&s=09"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/chacnsng"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/charlenecansing/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Charlene Cansing. Portfolio <i class="fas fa-heart"></i></p>
+    </div>
+ </div>
+
+
+
+ <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+ </script>
+
+ <script>
+
+    var sidemenu =document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxWHQSJw0xoq1obDzGktE6-Oume952-pXQW2rKlbCTjU7PBuO48YOXYmozbslji8uxY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
